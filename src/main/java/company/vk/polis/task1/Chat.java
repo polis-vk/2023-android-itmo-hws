@@ -7,4 +7,8 @@ record Chat(Integer id, UserPair userIds, List<Integer> messageIds) implements E
     public Integer getId() {
         return id;
     }
+    @Override
+    public Integer getType() {
+        return 0;
+    }
 }
