@@ -1,6 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity"
+    android:background="?attr/back_primary"
+    >
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/stem_bold"
+            android:text="@string/login_message1"
+            android:textColor="?attr/label_primary"
+            android:textSize="32sp"
+            android:textDirection="locale"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/stem_bold"
+        android:gravity="center"
+        android:text="@string/login_message2"
+        android:textColor="?attr/label_tertiary"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        android:textDirection="locale"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="?attr/label_tertiary"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_email_white_24dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/stem_regular"
+                android:hint="@string/email_hint"
+                android:maxLines="1"
+                android:textColor="?attr/label_primary"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:inputType="textEmailAddress"
+                android:autofillHints="mail"
+                android:textDirection="locale"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="?attr/label_tertiary"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/stem_regular"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="?attr/label_primary"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no"
+                android:textDirection="locale"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkBoxShowPassword"
+                android:buttonTint="?attr/label_tertiary"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/show_password"
+                android:textColor="?attr/label_tertiary"
+                android:textDirection="locale"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/stem_regular"
+                android:text="@string/login_button"
+                android:textAllCaps="false"
+                android:textColor="?attr/label_tertiary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textDirection="locale"/>
+
+            <Button
+                android:id="@+id/themeToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/stem_regular"
+                android:text= "@string/change_theme"
+                android:textAllCaps="false"
+                android:textColor="?attr/label_tertiary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textDirection="locale"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
