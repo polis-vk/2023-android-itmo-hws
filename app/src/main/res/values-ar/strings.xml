@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">itmo-example</string>
+    <string name="applicationthemeButton">الوضع الليلي</string>
+    <string name="modeTranslator">ترجمة</string>
+    <string name="loginString">تسجيل الدخول</string>
+    <string name="inputEmail">iأدخل بريدك الإلكتروني</string>
+    <string name="loginButton">تسجيل الدخول</string>
+    <string name="inputPassword">أدخل كلمة المرور الخاصة بك</string>
+    <string name="blackButton">أسود</string>
+    <string name="whiteButton">أبيض</string>
+    <string name="englishButton">أولا</string>
+    <string name="arabianButton">ثانيا</string>
+    <string name="show">عرض</string>
+    <string name="hide">إخفاء</string>
+</resources>

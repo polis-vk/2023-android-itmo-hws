@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <string name="applicationthemeButton">application theme</string>
+    <string name="modeTranslator">translate</string>
+    <string name="loginString">login</string>
+    <string name="inputEmail">input your email</string>
+    <string name="loginButton">log in</string>
+    <string name="inputPassword">input your password</string>
+    <string name="blackButton">first</string>
+    <string name="whiteButton">second</string>
+    <string name="englishButton">english</string>
+    <string name="arabianButton">arabian</string>
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+
 </resources>

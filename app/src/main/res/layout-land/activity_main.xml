@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/application_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applicationthemeButton"
+        android:textAlignment="center"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blackButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/application_theme"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whiteButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/Black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Email"/>
+
+    <Button
+        android:id="@+id/Translator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modeTranslator"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/englishButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/Translator"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Arabian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arabianButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/English"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Email"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/centerH"
+    app:layout_constraintBottom_toTopOf="@+id/centerV"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputPassword"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/centerH"
+    app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp" />
+
+
+    <ToggleButton
+        android:id="@+id/togglePasswordVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/show"
+        android:textOn="@string/hide"
+        app:layout_constraintEnd_toStartOf="@+id/centerH"
+        app:layout_constraintBottom_toBottomOf="@+id/Password"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginButton"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="@+id/centerH"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintBottom_toTopOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

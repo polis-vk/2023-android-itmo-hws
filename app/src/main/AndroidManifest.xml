@@ -19,7 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Itmoexample"
         tools:targetApi="31">
+        <!-- why it works? (for myself) -->
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
