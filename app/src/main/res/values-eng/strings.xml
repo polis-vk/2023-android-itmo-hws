@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ITMO-task</string>
+    <string name="registration">Registration</string>
+
+    <string name="login_text">Login</string>
+    <string name="login_hint">Enter your login</string>
+
+    <string name="password_text">Password</string>
+    <string name="password_hint">Enter your password</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="theme">Dark theme</string>
+    <string name="successful">Successful registration</string>
+
+    <string name="error_empty_login">Login not specified</string>
+    <string name="error_incorrect_login">Invalid email address</string>
+    <string name="error_empty_password">Password not specified</string>
+    <string name="error_incorrect_password">Incorrect password</string>
+    <string name="error_password_lenght">Password must contain at least 6 characters</string>
+</resources>

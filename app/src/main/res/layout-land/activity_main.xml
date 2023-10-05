@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:text="@string/registration"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -19,33 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:text="@string/sign_in"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:id="@+id/signInButton"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Switch
-        android:id="@+id/switchTheme"
-        android:layout_width="wrap_content"
-        android:minWidth="48dp"
-        android:layout_height="48dp"
-
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-
-        android:text="@string/theme"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UseSwitchCompatOrMaterialXml"
-        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLoginLayout"
@@ -110,6 +83,36 @@
             tools:ignore="TextContrastCheck"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="@string/sign_in"
+        android:layout_marginTop="150sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="wrap_content"
+        android:minWidth="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/theme"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

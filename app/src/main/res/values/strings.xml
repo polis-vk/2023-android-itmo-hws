@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">ИТМО-задание</string>
+    <string name="registration">Регистрация</string>
+
+    <string name="login_text">Логин</string>
+    <string name="login_hint">Введите ваш логин</string>
+
+    <string name="password_text">Пароль</string>
+    <string name="password_hint">Введите ваш пароль</string>
+
+    <string name="sign_in">Вход</string>
+    <string name="theme">Темная тема</string>
+    <string name="successful">Вы успешно зарегестрированы</string>
+
+    <string name="error_empty_login">Не указан логин</string>
+    <string name="error_incorrect_login">Некорректный адрес почты</string>
+    <string name="error_empty_password">Не указан пароль</string>
+    <string name="error_incorrect_password">Неверный пароль</string>
+    <string name="error_password_lenght">Пароль должен содержать минимум 6 символов</string>
+
 </resources>

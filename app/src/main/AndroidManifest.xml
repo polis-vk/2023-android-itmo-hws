@@ -3,12 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.ok.itmo.example">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,11 +14,12 @@
         android:theme="@style/Theme.Itmoexample"
         tools:targetApi="31">
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
     </application>

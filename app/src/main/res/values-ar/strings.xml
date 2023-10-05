@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">مهمة ITMO</string>
+    <string name="registration">تسجيل</string>
+
+    <string name="login_text">تسجيل الدخول</string>
+    <string name="login_hint">أدخل تسجيل الدخول الخاص بك</string>
+
+    <string name="password_text">كلمة المرور</string>
+    <string name="password_hint">ادخل رقمك السري</string>
+
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="theme">ليلة</string>
+    <string name="successful">لقد قمت بالتسجيل بنجاح</string>
+
+    <string name="error_empty_login">تسجيل الدخول غير محدد</string>
+    <string name="error_incorrect_login">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="error_empty_password">كلمة المرور غير محددة</string>
+    <string name="error_incorrect_password">كلمة سر خاطئة</string>
+    <string name="error_password_lenght">يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل</string>
+</resources>
