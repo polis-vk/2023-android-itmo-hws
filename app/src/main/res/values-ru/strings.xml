@@ -1,0 +1,11 @@
+<resources>
+    <string name="login_email">логин (email)</string>
+    <string name="log_in">войти</string>
+    <string name="password">пароль</string>
+    <string name="show_password">показать пароль</string>
+    <string name="switch_theme">темная тема</string>
+    <string name="login_is_empty">введите логин</string>
+    <string name="password_is_empty">введите пароль</string>
+    <string name="not_valid_email">email некорректный</string>
+    <string name="password_too_short">пароль короче 6 символов</string>
+</resources>

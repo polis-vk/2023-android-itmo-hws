@@ -19,18 +19,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="10dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="100dp" />
-
-
     <EditText
         android:id="@+id/loginField"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/verifyButton"
         android:autofillHints="true"
         android:ems="10"
         android:hint="@string/login_email"
@@ -39,21 +33,22 @@
         android:singleLine="true"
         android:textColorHint="#A1887F"
         android:textAlignment="viewStart"
-        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/themeSwitch"
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/passwordField"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:autofillHints="false"
         android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/verifyButton"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:singleLine="true"
         android:textColorHint="#A1887F"
-        android:textDirection="anyRtl"
         android:textAlignment="viewStart"
         app:layout_constraintTop_toBottomOf="@id/loginField"
         tools:ignore="VisualLintTextFieldSize" />
@@ -72,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/log_in"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/passwordField"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -81,8 +76,9 @@
         android:layout_height="wrap_content"
         android:textColor="?errorTextColor"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/showPasswordCheckBox" />
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@id/showPasswordCheckBox"
+        app:layout_constraintTop_toBottomOf="@id/passwordField" />
 
     <TextView
         android:id="@+id/passwordErrorTextView"
@@ -90,7 +86,7 @@
         android:layout_height="wrap_content"
         android:textColor="?errorTextColor"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/loginErrorTextView"
         app:layout_constraintTop_toBottomOf="@id/loginErrorTextView" />
 
 

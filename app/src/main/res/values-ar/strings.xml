@@ -1,0 +1,11 @@
+<resources>
+    <string name="login_email">تسجيل الدخول (البريد الإلكتروني)</string>
+    <string name="log_in">أدخل</string>
+    <string name="password">كلمة المرور</string>
+    <string name="show_password">إظهار كلمة المرور</string>
+    <string name="switch_theme">موضوع الظلام</string>
+    <string name="login_is_empty">أدخل اسم المستخدم الخاص بك</string>
+    <string name="password_is_empty">أدخل كلمة المرور</string>
+    <string name="not_valid_email">البريد الإلكتروني غير صحيح</string>
+    <string name="password_too_short">كلمة المرور أقصر من 6 أحرف</string>
+</resources>

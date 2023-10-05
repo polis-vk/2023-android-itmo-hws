@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name" translatable="false">itmo-example</string>
+    <string name="login_email">login (email)</string>
+    <string name="log_in">log in</string>
+    <string name="password">password</string>
+    <string name="show_password">show password</string>
+    <string name="switch_theme">dark mode</string>
+    <string name="login_is_empty">login is empty</string>
+    <string name="password_is_empty">password is empty</string>
+    <string name="not_valid_email">not valid email</string>
+    <string name="password_too_short">password is shorter than 6 symbols</string>
 </resources>
