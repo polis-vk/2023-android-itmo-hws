@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">itmo-example</string>
+    <string name="page_title">إذن المستخدم</string>
+    <string name="email_hint">أدخل بريدك الإلكتروني</string>
+    <string name="password_hint">أدخل كلمة المرور الخاصة بك</string>
+    <string name="authorization_btn">مدخل</string>
+    <string name="theme_switch">الموضوع</string>
+    <string name="password_visibility">عرض</string>
+    <string name="error_empty">إدخال فارغ</string>
+    <string name="error_input_email">إدخال بريد إلكتروني غير صحيح</string>
+    <string name="error_input_password">كلمة مرور مكونة من 4 أحرف على الأقل</string>
+    <string name="correct_input">بنجاح</string>
+</resources>

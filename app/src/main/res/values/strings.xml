@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <string name="page_title">Авторизация пользователя</string>
+    <string name="email_hint">Введите ваш email</string>
+    <string name="password_hint">Введите ваш пароль</string>
+    <string name="authorization_btn">Вход</string>
+    <string name="theme_switch">Тема</string>
+    <string name="password_visibility">Показать</string>
+    <string name="error_empty">Пустой ввод</string>
+    <string name="error_input_email">Некорректный ввод email</string>
+    <string name="error_input_password">Пароль не менее 4 символов</string>
+    <string name="correct_input">Успешно</string>
 </resources>
