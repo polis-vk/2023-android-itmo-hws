@@ -1,5 +1,7 @@
 package company.vk.polis.task1
 
 fun main() {
-    //TODO()
+    val messageController = MessageController()
+    println(messageController.getChatItems(1, StateEnum.DELETED))
+    println(messageController.countMessages(1))
 }

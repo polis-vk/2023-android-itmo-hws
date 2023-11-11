@@ -1,11 +1,6 @@
 package company.vk.polis.task1;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class DataUtils {
     private static final int MIN_MESSAGE_PER_USER = 25;
@@ -31,16 +26,19 @@ public class DataUtils {
             List<Message> messages = new ArrayList<>();
             int numMessages = random.nextInt(MIN_MESSAGE_PER_USER) + MIN_MESSAGE_PER_USER;
             for (int j = 0; j < numMessages; j++, k++) {
-                String text = texts[random.nextInt(texts.length)];
-                Message message = new Message(k, text, i, System.currentTimeMillis());
-                messages.add(message);
+                for (var state : StateEnum.getEntries()) {
+                    String text = texts[random.nextInt(texts.length)];
+                    State stateObj = state.equals(StateEnum.DELETED) ? new State(state, (long) i) : new State(state);
+                    Message message = new Message(k, text, i, System.currentTimeMillis(), stateObj);
+                    messages.add(message);
+                }
             }
             map.put(i, messages);
         }
         return map;
     }
 
-    public static List<Chat> generateChats(int maxUserId, Map<Integer, List<Message>> senders) {
+    public static List<BaseChat> generateChats(int maxUserId, Map<Integer, List<Message>> senders) {
         Random random = new Random();
         Map<UserPair, List<Integer>> userPairListMap = new HashMap<>();
         for (int i = 0; i < maxUserId; i++) {
@@ -60,9 +58,15 @@ public class DataUtils {
             }
         }
         int k = 0;
-        ArrayList<Chat> list = new ArrayList<>();
+        ArrayList<BaseChat> list = new ArrayList<>();
         for (Map.Entry<UserPair, List<Integer>> entry : userPairListMap.entrySet()) {
             list.add(new Chat(k, entry.getKey(), entry.getValue()));
+            k++;
+        }
+
+        for (Map.Entry<UserPair, List<Integer>> entry : userPairListMap.entrySet()) {
+            list.add(new GroupChat(k, List.of(entry.getKey().senderId(), entry.getKey().receiverId()), entry.getValue(),
+                    null));
             k++;
         }
         return list;
@@ -73,7 +77,7 @@ public class DataUtils {
         int maxUserId = 10;
         List<User> users = generateUsers(maxUserId);
         Map<Integer, List<Message>> message = generateMessages(maxUserId);
-        List<Chat> chats = generateChats(maxUserId, message);
+        List<BaseChat> chats = generateChats(maxUserId, message);
         List<Message> messages = message.entrySet().stream().flatMap(e -> e.getValue().stream()).toList();
 
         List<Entity> combined = new ArrayList<>();
@@ -94,10 +98,13 @@ public class DataUtils {
         garbage = random.nextInt(50);
         for (int i = 0; i < garbage; i++) {
             switch (random.nextInt(4)) {
-                case 0 -> combined.add(new Message(null, texts[random.nextInt(texts.length - 1)], -1, -1L));
-                case 1 -> combined.add(new Message(-1, null, -1, -1L));
-                case 2 -> combined.add(new Message(-1, texts[random.nextInt(texts.length - 1)], null, -1L));
-                default -> combined.add(new Message(-1, texts[random.nextInt(texts.length - 1)], -1, null));
+                case 0 ->
+                        combined.add(new Message(null, texts[random.nextInt(texts.length - 1)], -1, -1L, new State(StateEnum.UNREAD)));
+                case 1 -> combined.add(new Message(-1, null, -1, -1L, new State(StateEnum.UNREAD)));
+                case 2 ->
+                        combined.add(new Message(-1, texts[random.nextInt(texts.length - 1)], null, -1L, new State(StateEnum.UNREAD)));
+                default ->
+                        combined.add(new Message(-1, texts[random.nextInt(texts.length - 1)], -1, null, new State(StateEnum.UNREAD)));
             }
         }
         garbage = random.nextInt(50);
