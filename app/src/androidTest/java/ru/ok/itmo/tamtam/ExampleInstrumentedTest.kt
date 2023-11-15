@@ -1,4 +1,4 @@
-package ru.ok.itmo.example
+package ru.ok.itmo.tamtam
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

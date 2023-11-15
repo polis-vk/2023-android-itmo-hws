@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">TamTam</string>
+
+    <string name="login_with_login">ВОЙТИ ЧУРЕЗ ЛОГИН</string>
+    <string name="login_with_phone">ВОЙТИ ЧЕРЕЗ ТЕЛЕФОН</string>
+    <string name="sign_in">ВОЙТИ</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="write_password">Введите пароль</string>
+    <string name="write_login">Введите логин</string>
+    <string name="remember_login">Забыли пароль?</string>
+    <string name="write_login_and_password">Введите ваш логин и пароль</string>
+    <string name="info">Нажимая «Войти», вы соглашаетесь с политикой
+        конфиденциальности</string>
+
+    <string name="info_chat_fragment">Здесь будет экран чатов</string>
 </resources>
