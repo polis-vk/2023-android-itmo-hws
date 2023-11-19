@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="warning">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
+    <string name="login">Войти через телефон</string>
+    <string name="login_toolbar">Логин</string>
+    <string name="chat_toolbar">Чаты</string>
+    <string name="login_psw">Введите логин и пароль</string>
+    <string name="forgot">Забыли пароль?</string>
+    <string name="enter">Введите логин</string>
+    <string name="enter_button">Войти</string>
+    <string name="password">Введите пароль</string>
 </resources>
