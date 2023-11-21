@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">Verification</string>
+    <string name="email_input">Enter your email</string>
+    <string name="password_input">Enter your password</string>
+    <string name="button_show_password">show password</string>
+    <string name="button_hide_password">hide password</string>
+    <string name="button_change_theme">change theme</string>
+    <string name="button_enter">Enter</string>
+    <string name="error_empty_emil">Empty email</string>
+    <string name="error_few_chars">Email must consist at least 6 symbols</string>
+    <string name="error_wrong_email">Wrong email</string>
+    <string name="error_empty_password">Empty password</string>
+    <string name="login">Log in successfully!</string>
 </resources>

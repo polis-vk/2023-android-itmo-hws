@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تَحَقّق</string>
+    <string name="email_input">أدخل بريدك الإلكتروني</string>
+    <string name="password_input">ادخل رقمك السري</string>
+    <string name="button_show_password">عرض كلمة المرور</string>
+    <string name="button_hide_password">اخفاء كلمة المرور</string>
+    <string name="button_change_theme">غير الخلفية</string>
+    <string name="button_enter">يدخل</string>
+    <string name="error_empty_emil">بريد إلكتروني فارغ</string>
+    <string name="error_few_chars">يجب أن يتكون البريد الإلكتروني من 6 رموز على الأقل</string>
+    <string name="error_wrong_email">بريد إلكتروني خاطئ</string>
+    <string name="error_empty_password">كلمة المرور فارغة</string>
+    <string name="login">تسجيل الدخول بنجاح!</string>
+</resources>

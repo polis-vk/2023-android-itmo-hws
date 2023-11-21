@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Верификация</string>
+    <string name="email_input">Введите адрес электронной почты</string>
+    <string name="password_input">Введите ваш пароль</string>
+    <string name="button_show_password">показать пароль</string>
+    <string name="button_hide_password">скрыть пароль</string>
+    <string name="button_change_theme">поменять тему</string>
+    <string name="button_enter">Войти</string>
+    <string name="error_empty_emil">Пустой адрес электронной почты</string>
+    <string name="error_few_chars">Электронная почта должна состоять не менее чем из 6 символов</string>
+    <string name="error_wrong_email">Неправильный адрес электронной почты</string>
+    <string name="error_empty_password">Пустой пароль</string>
+    <string name="login">Успешная авторизация!</string>
+</resources>
