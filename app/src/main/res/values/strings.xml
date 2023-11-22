@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">Multiprocessing</string>
+    <string name="button_start">Start</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="button_begin_rx">RX</string>
+    <string name="button_begin_thread">Thread</string>
+    <string name="label_thread">Thread testing</string>
+    <string name="label_rx">RX testing</string>
+    <string name="label_add">Additional</string>
+    <string name="number_50">50</string>
+    <string name="number_100">100</string>
+    <string name="number_300">300</string>
+    <string name="number_1000">500</string>
+    <string name="nothing">Nothing</string>
+    <string name="additional">Additional</string>
+    <string name="title_activity_additional">AdditionalActivity</string>
+    <string name="button_restart">Restart</string>
+
+
 </resources>

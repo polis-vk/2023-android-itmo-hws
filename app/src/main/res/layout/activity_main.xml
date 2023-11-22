@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
 
-</FrameLayout>
+
+    <Button
+        android:id="@+id/button_thread_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Button.Small"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_rx_begin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="250dp"
+
+        android:text="@string/button_begin_thread"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+
+        />
+
+    <Button
+        android:id="@+id/button_rx_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Button.Small"
+
+
+        app:layout_constraintTop_toBottomOf="@id/button_thread_begin"
+        app:layout_constraintBottom_toTopOf="@id/button_additional_begin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+
+        android:text="@string/button_begin_rx"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+
+        />
+
+
+    <Button
+        android:id="@+id/button_additional_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Button.Small"
+
+        app:layout_constraintTop_toBottomOf="@id/button_rx_begin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="250dp"
+
+        android:text="@string/additional"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

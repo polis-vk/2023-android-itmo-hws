@@ -24,9 +24,18 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ThreadActivity"
+            android:label="@string/label_thread"/>
+        <activity android:name=".RxActivity"
+            android:label="@string/label_rx"/>
+        <activity
+            android:name=".AdditionalActivity"
+            android:label="@string/label_add"
+            />
     </application>
 
 </manifest>
