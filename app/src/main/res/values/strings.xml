@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="authorize">Authorize</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="app_name" translatable="false">TutTut</string>
+    <string name="login_title">Enter your login and password</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>

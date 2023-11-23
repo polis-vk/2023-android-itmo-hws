@@ -1,4 +1,4 @@
-package ru.ok.itmo.example
+package ru.ok.itmo.tuttut
 
 import org.junit.Test
 
