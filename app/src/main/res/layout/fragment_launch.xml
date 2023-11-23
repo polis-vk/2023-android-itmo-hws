@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorAccent">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginWithPhoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_phone_round_border_huge"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:elevation="0dp"
+        android:paddingHorizontal="66dp"
+        android:paddingVertical="15dp"
+        android:stateListAnimator="@animator/mtrl_btn_unelevated_state_list_anim"
+        android:text="@string/auth_phone"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.TamTam.ButtonText"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginWithBasicBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginWithBasicBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_basic_round_border_huge"
+        android:drawablePadding="8dp"
+        android:elevation="0dp"
+        android:paddingVertical="15dp"
+        android:paddingStart="84dp"
+        android:paddingEnd="84dp"
+        android:stateListAnimator="@animator/mtrl_btn_unelevated_state_list_anim"
+        android:text="@string/auth_login"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.TamTam.ButtonText"
+        android:textColor="?attr/colorPrimary"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/loginWithPhoneBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginWithPhoneBtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.TamTam.Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:alpha="0.7"
+        android:scrollHorizontally="false"
+        android:text="@string/privacy_policy"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/loginWithBasicBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginWithBasicBtn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/loginWithPhoneBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Logo"
+            app:srcCompat="@drawable/ic_logo"
+            app:tint="?attr/colorPrimary" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:id="@+id/logoName"
+            style="@style/TextAppearance.TamTam.LogoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
