@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">itmo-example</string>
+
+    <string name="privacy_policy">Нажимая «Войти», вы соглашаетесь с политикой
+конфиденциальности</string>
+    <string name="button_started_login">ВОЙТИ ЧЕРЕЗ ЛОГИН</string>
+    <string name="button_started_phone">ВОЙТИ ЧЕРЕЗ ТЕЛЕФОН</string>
+    
+    <string name="type_your_login_and_password">Введите ваш логин и пароль</string>
+    <string name="hint_login">Введите логин</string>
+    <string name="hint_password">Введите пароль</string>
+    <string name="hint_message_text">Текст сообщения</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="sign_in">ВОЙТИ</string>
+
+    <string name="login_error_unauthorized">Неправильный логин или пароль</string>
+    <string name="login_error_cant_connect">Не получилось связаться с сервером</string>
+    <string name="login_error">Что-то пошло не так</string>
+
+
+    <string name="action_bar_login">Логин</string>
+    <string name="action_bar_chats">Чаты</string>
+
+    <string name="no_messages">Нет сообщений</string>
+    <string name="no_channels">Нет каналов</string>
+    <string name="cant_load_channels">Не получилось загрузить чаты</string>
+    <string name="message_first">Напишите первым или отправьте стикер</string>
+
+    <string name="content_description_back_button">Кнопка назад</string>
+    <string name="content_description_action_bar_button">Кнопка в верхней панели</string>
+
+    <string name="content_description_emoji_button">Эмоджи</string>
+    <string name="content_description_attachment_button">Прикрепить</string>
+    <string name="content_description_voice_button">Голосовое сообщение</string>
+    <string name="content_description_sticker">Стикер</string>
+
+    <string name="error_occured">Произошла_ошибка</string>
+    <string name="empty_channel">Пустой канал</string>
+    <string name="image">Изображение</string>
 </resources>
