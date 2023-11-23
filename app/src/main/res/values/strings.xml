@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <string name="login">Логин</string>
+    <string name="add_uor_login_and_password">Введите ваш логин и пароль</string>
+    <string name="password">Пароль</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="enter">Войти</string>
+    <string name="card_tittle_text">Имя пользователя</string>
+    <string name="chat_name">Название чата</string>
 </resources>
