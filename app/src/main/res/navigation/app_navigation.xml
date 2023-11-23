@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ok.itmo.tamtam.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="ru.ok.itmo.tamtam.ui.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_startFragment"
+        app:destination="@id/startFragment"
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="ru.ok.itmo.tamtam.ui.chats.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats">
+        <action
+            android:id="@+id/action_chatsFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_chatsFragment_to_communicationFragment"
+            app:destination="@id/communicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/communicationFragment"
+        android:name="ru.ok.itmo.tamtam.ui.CommunicationFragment"
+        android:label="fragment_communication"
+        tools:layout="@layout/fragment_communication">
+        <action
+            android:id="@+id/action_communicationFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+    </fragment>
+</navigation>
