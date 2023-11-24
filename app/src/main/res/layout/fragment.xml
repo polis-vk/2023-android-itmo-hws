@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textSize="100px"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="50px"/>
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Back"
+        android:textSize="70px" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_chat"
+        android:layout_height="match_parent"
+        android:layout_marginTop="225px"
+        android:divider="#fff"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</FrameLayout>
