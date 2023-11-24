@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarColor" parent="Theme.Itmoexample">
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">?attr/colorPrimary</item>
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="android:textColorHint">?attr/colorOnSecondary</item>
+        <item name="hintTextColor">?attr/colorOnSecondary</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="materialThemeOverlay">@style/Activated</item>
+    </style>
+    <style name="Activated" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">@color/accent</item>
+    </style>
+
+    <style name="TextAppearance.TamTam" parent="TextAppearance.AppCompat"/>
+
+    <style name="HintTextAppearance" parent="TextAppearance.TamTam">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

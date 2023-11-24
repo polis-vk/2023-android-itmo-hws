@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <string name="logo">logo</string>
+    <string name="login_by_phone">Войти через телефон</string>
+    <string name="privacy_policy_warning">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
+    <string name="login_by_login">Войти через логин</string>
+    <string name="enter">Войти</string>
+    <string name="enter_login_and_password">Введите ваш логин и пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="input_login">Введите логин</string>
+    <string name="login">Логин</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="password">Пароль</string>
+    <string name="success_login">Вы успешно вошли в аккаунт! Ваш токен: %s</string>
+    <string name="invalid_login_or_password">Неправильный логин или пароль.</string>
+    <string name="server_error">Ошибка сервера.</string>
+    <string name="no_internet_connection">Нет подключения к интернету.</string>
+    <string name="timed_out">Превышенно время ожидания</string>
+    <string name="chats">Чаты</string>
+    <string name="edit_chats">Редактировать чаты</string>
+    <string name="photo">Фото</string>
+    <string name="three_dots">…</string>
+    <string name="error">error: %1$s</string>
+    <string name="no_messages">Сообщений нет</string>
 </resources>

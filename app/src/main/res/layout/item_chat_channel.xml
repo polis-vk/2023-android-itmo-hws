@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_chat_height"
+    android:orientation="horizontal">
+
+    <io.getstream.avatarview.AvatarView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/item_chat_height"
+        android:layout_height="@dimen/item_chat_height"
+        app:avatarViewPlaceholder="@drawable/avatar_placeholder"
+        app:avatarViewShape="circle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:text="12:52" />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Канал" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <io.getstream.avatarview.AvatarView
+                android:id="@+id/last_message_avatar"
+                android:layout_width="@dimen/item_chat_channel_height"
+                android:layout_height="@dimen/item_chat_channel_height"
+                app:avatarViewPlaceholder="@drawable/avatar_placeholder"
+                app:avatarViewShape="circle" />
+
+            <TextView
+                android:id="@+id/last_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="Пришли макеты" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/new_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_textview"
+            android:gravity="center"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/fragment_start">
+
+    <fragment
+            android:id="@+id/fragment_start"
+            android:name="ru.ok.itmo.example.StartFragment"
+            tools:layout="@layout/fragment_start">
+        <action
+                android:id="@+id/action_nav_to_fragment_enter"
+                app:destination="@id/fragment_enter"
+                app:popUpTo="@id/fragment_start"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_enter"
+            android:name="ru.ok.itmo.example.enter.login.EnterFragment"
+            tools:layout="@layout/fragment_enter">
+        <action
+                android:id="@+id/action_nav_to_fragment_chats"
+                app:destination="@id/fragment_chats"
+                app:popUpTo="@id/fragment_enter"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+            android:id="@+id/fragment_chats"
+            android:name="ru.ok.itmo.example.chats.ChatsFragment"
+            tools:layout="@layout/fragment_chats">
+        <argument
+                android:name="token"
+                app:argType="string" />
+    </fragment>
+</navigation>
