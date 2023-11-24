@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">ТамТам</string>
+    <string name="client_exception_message">Ошибка клиента</string>
+    <string name="connection_exception_message">Ошибка соединения</string>
+    <string name="server_exception_message">Ошибка сервера</string>
+    <string name="unauthorized_exception_message">Неверный логин или пароль</string>
+    <string name="unknown_exception_message">Неизвестная ошибка</string>
+    <string name="privacy_policy">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
+    <string name="auth_login">Войти через логин</string>
+    <string name="auth_phone">Войти через телефон</string>
+    <string name="login_page">Логин</string>
+    <string name="helper_login">Введите ваш логин и пароль</string>
+    <string name="input_login">Введите логин</string>
+    <string name="input_password">Введите логин</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="login">Войти</string>
+    <string name="chats_page">Чаты</string>
+    <string name="settings">Настройки</string>
+    <string name="retry_request">Повторить запрос</string>
+    <string name="message_text">Текст сообщения</string>
+    <string name="message_none">Нет сообщений</string>
+    <string name="please_send_message">Напишите первым\nили отправьте стикер</string>
+    <string name="avatar">Аватар</string>
 </resources>

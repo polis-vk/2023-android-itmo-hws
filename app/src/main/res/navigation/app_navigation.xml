@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/launchFragment">
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="ru.ok.itmo.tamtam.presentation.fragment.LaunchFragment"
+        android:label="LaunchFragment">
+        <action
+            android:id="@+id/action_launchFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ok.itmo.tamtam.presentation.fragment.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="ru.ok.itmo.tamtam.presentation.fragment.ChatsFragment"
+        android:label="ChatsFragment">
+        <action
+            android:id="@+id/action_chatsFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="ru.ok.itmo.tamtam.presentation.fragment.ChatFragment"
+        android:label="ChatFragment">
+        <argument
+            android:name="chat_id"
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_launchFragment"
+        app:destination="@id/launchFragment"
+        app:enterAnim="@anim/slide_in_left"
+        app:exitAnim="@anim/slide_out_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/slide_out_right"
+        app:popExitAnim="@anim/slide_in_right"
+        app:popUpTo="@id/chatsFragment"
+        app:popUpToInclusive="true" />
+
+
+    <action
+        android:id="@+id/action_to_chatsFragment"
+        app:destination="@id/chatsFragment"
+        app:enterAnim="@anim/slide_in_left"
+        app:exitAnim="@anim/slide_out_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/slide_out_right"
+        app:popExitAnim="@anim/slide_in_right"
+        app:popUpTo="@id/launchFragment"
+        app:popUpToInclusive="true" />
+
+</navigation>
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/countBadgeTW"
+        style="@style/TextAppearance.TamTam.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_none"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/TextAppearance.TamTam.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:text="@string/please_send_message"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/avatarIW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:srcCompat="@mipmap/no_messages_sticker" />
+
+</LinearLayout>
