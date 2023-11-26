@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/recieved_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/message"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/recieved_message_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/recieved_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="2dp"
+
+            android:textSize="15sp"
+            android:paddingBottom="1dp"/>
+        <TextView
+            android:id="@+id/recieved_message_when"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:textColor="@color/secondary"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sended_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/message"
+        android:backgroundTint="@color/accent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:id="@+id/sended_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:paddingBottom="1dp"/>
+        <TextView
+            android:id="@+id/sended_message_when"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</RelativeLayout>
