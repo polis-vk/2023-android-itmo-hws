@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <string name="login_button_text">Войти через телефон</string>
+    <string name="login">Логин</string>
+    <string name="password_label">Пароль</string>
+    <string name="sign_in">Войти\n</string>
+    <string name="login_help_text">Введите ваш логин и пароль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_failure_toast">Login failure</string>
 </resources>
