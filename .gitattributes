@@ -1,4 +1,7 @@
 * text eol lf
 
+# icons
+*.webp -text
+
 # batch
 *.bat text eol=crlf

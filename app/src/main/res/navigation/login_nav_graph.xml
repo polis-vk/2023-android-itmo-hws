@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ok.itmo.tamtam.login.login_fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_fragmentLogin_to_app_nav_graph"
+            app:destination="@id/app_nav_graph"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <include app:graph="@navigation/app_nav_graph" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="ru.ok.itmo.tamtam.login.other_fragments.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="ru.ok.itmo.tamtam.login.other_fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_loginPhoneFragment"
+            app:destination="@id/loginPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPhoneFragment"
+        android:name="ru.ok.itmo.tamtam.login.other_fragments.LoginPhoneFragment"
+        android:label="fragment_login_phone"
+        tools:layout="@layout/fragment_login_phone" />
+</navigation>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent"
+    tools:context=".login.other_fragments.StartFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/logo_full"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:id="@+id/btn_phone_authorization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginVertical="8dp"
+
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="48dp"
+
+            app:icon="@drawable/icon_phone"
+            app:iconGravity="textStart"
+            app:iconTint="@color/accent"
+            android:paddingVertical="15dp"
+            android:text="@string/btn_phone_authorization_massage"
+            android:textColor="@color/accent"
+            android:textAppearance="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+
+            android:lineSpacingExtra="2sp"
+            android:translationY="-0.8sp"
+            android:gravity="center_horizontal|top"
+            app:cornerRadius="@dimen/button_corner_radius" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_authorization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingHorizontal="48dp"
+            android:paddingVertical="15dp"
+
+            android:text="@string/btn_login_authorization_message"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            style="?android:attr/borderlessButtonStyle" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="16dp"
+
+            android:gravity="center"
+            android:text="@string/privacy_policy_message"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
