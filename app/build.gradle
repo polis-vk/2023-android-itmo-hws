@@ -1,14 +1,16 @@
 plugins {
     id "com.android.application"
     id "org.jetbrains.kotlin.android"
+    id("com.google.devtools.ksp")
 }
+
 
 android {
     compileSdk 34
 
     defaultConfig {
         applicationId "ru.ok.itmo.hw"
-        minSdk 24
+        minSdk 26
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -35,8 +37,31 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation "androidx.preference:preference-ktx:1.2.1"
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3")
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor  'android.arch.persistence.room:compiler:1.1.1'
+    implementation "androidx.room:room-ktx:2.6.0"
+    ksp "androidx.room:room-compiler:2.6.0"
+    implementation "androidx.activity:activity-ktx:1.8.1"
+    implementation "androidx.fragment:fragment-ktx:1.6.2"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    implementation 'androidx.room:room-runtime:2.6.0'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
 }

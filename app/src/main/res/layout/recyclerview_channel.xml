@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/group_svgrepo_com"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/channel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Работка"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <ImageView
+                android:id="@+id/last_man_messaged"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/_4_user_outline_vk"/>
+            <TextView
+                android:id="@+id/last_message_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary"
+                android:textSize="15sp"
+                android:paddingBottom="1dp"
+                android:text="Пришли макеты"
+                app:layout_constraintStart_toEndOf="@id/last_man_messaged"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="4dp"/>
+            <TextView
+                android:id="@+id/last_message_when"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textColor="@color/secondary"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:text="12:24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

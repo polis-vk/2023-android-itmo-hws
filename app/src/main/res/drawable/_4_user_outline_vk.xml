@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+  <shape
+      android:shape="oval">
+    <solid android:color="@color/disabled"/>
+    <size
+        android:width="32dp"
+        android:height="32dp"
+        />
+  </shape>
+</item>
+<item>
+  <vector
+      android:width="24dp"
+      android:height="24dp"
+      android:viewportWidth="24"
+      android:viewportHeight="24">
+    <path
+        android:pathData="M15,7.286C15,5.628 13.658,4.286 12,4.286C10.342,4.286 9,5.628 9,7.286C9,8.943 10.342,10.286 12,10.286C13.658,10.286 15,8.943 15,7.286ZM16.714,7.286C16.714,9.89 14.604,12 12,12C9.395,12 7.286,9.89 7.286,7.286C7.286,4.681 9.395,2.571 12,2.571C14.604,2.571 16.714,4.681 16.714,7.286ZM6,17.694C6,18.503 5.931,18.429 6.391,18.429H18.038C18.497,18.429 18.428,18.503 18.428,17.694C18.428,15.733 15.597,14.571 12.214,14.571C8.832,14.571 6,15.733 6,17.694ZM4.286,17.694C4.286,14.368 7.97,12.857 12.214,12.857C16.458,12.857 20.143,14.368 20.143,17.694C20.143,19.422 19.473,20.143 18.038,20.143H6.391C4.955,20.143 4.286,19.422 4.286,17.694Z"
+        android:fillColor="@color/secondary"/>
+  </vector>
+</item>
+</layer-list>
