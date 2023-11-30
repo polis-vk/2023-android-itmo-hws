@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AvatarView">
+        <attr name="customTextColor" format="color" />
+        <attr name="customTextSize" format="dimension" />
+        <attr name="customBackground" format="color" />
+    </declare-styleable>
+
+</resources>
