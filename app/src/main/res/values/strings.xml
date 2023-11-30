@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">ТамТам</string>
+    <string name="enter_by_phone">Войти через телефон</string>
+    <string name="enter_by_login">Войти через логин</string>
+    <string name="enter_confidentiality_warning">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
+    <string name="login_header">Логин</string>
+    <string name="login_description">Введите ваш логин и пароль</string>
+    <string name="login_login">Логин</string>
+    <string name="login_password">Введите пароль</string>
+    <string name="login_forgot_password">Забыли пароль?</string>
+    <string name="login_submit">Войти</string>
+    <string name="forgot_password_header">Восстановление пароля</string>
+    <string name="forgot_password_description">Забыли пароль?</string>
+    <string name="forgot_password_login">Логин</string>
+    <string name="forgot_password_password">Новый пароль</string>
+    <string name="forgot_password_password_confirm">Повторите новый пароль</string>
+    <string name="forgot_password_submit">Восстановить</string>
+    <string name="home_header">Домашняя страница</string>
+    <string name="home_description">Домашняя страница</string>
+    <string name="home_new_channel">Новый чат</string>
+    <string name="channel_header">Канал</string>
+    <string name="channel_description">Канал</string>
+    <string name="channel_no_data">Здесь еще нет сообщений</string>
+
+    <string name="channel_card_default_title">Чат</string>
+    <string name="channel_card_default_preview">Превью сообщения</string>
+    <string name="channel_card_default_time">12:00</string>
+
+    <string name="message_card_default_title">Сообщение</string>
+    <string name="message_card_default_preview">Превью сообщения</string>
+    <string name="message_card_default_time">12:00</string>
 </resources>
