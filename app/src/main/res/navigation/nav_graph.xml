@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ok.itmo.tuttut.login.ui.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="ru.ok.itmo.tuttut.chats.ui.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats">
+        <action
+            android:id="@+id/action_chatsFragment_to_messengerFragment"
+            app:destination="@id/messengerFragment">
+            <argument
+                android:name="chat"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/messengerFragment"
+        android:name="ru.ok.itmo.tuttut.messenger.ui.MessengerFragment"
+        android:label="fragment_messenger"
+        tools:layout="@layout/fragment_messenger">
+        <argument
+            android:name="chat"
+            app:argType="string" />
+    </fragment>
+</navigation>

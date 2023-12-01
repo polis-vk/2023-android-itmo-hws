@@ -1,0 +1,9 @@
+<resources>
+    <string name="authorize">Вход</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login_title">Введите ваш логин и пароль</string>
+    <string name="chats">Чаты</string>
+    <string name="loading">Загрузка…</string>
+    <string name="log_in">Вход</string>
+</resources>
