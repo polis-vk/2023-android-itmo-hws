@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">itmo-example</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_login_and_pass">Введите ваш логин и пароль</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="enter_pass">Введите пароль</string>
+    <string name="forgot_pass">Забыли пароль?</string>
+    <string name="login">Войти</string>
+    <string name="auth_title">Логин</string>
+    <string name="home_page">Домашняя страница</string>
+    <string name="enter_with_phone">Войти через телефон</string>
+    <string name="enter_with_login">Войти через логин</string>
+    <string name="political_rules">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
 </resources>

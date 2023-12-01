@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginBottom="5sp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/channelCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/channelAvatar"
+            android:layout_centerInParent="true"
+            tools:src="@tools:sample/avatars"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/channelMsgTime"
+            app:layout_constraintStart_toEndOf="@+id/channelAvatar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/channelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="TextView"
+                android:textAppearance="@style/t_15_bold" />
+
+            <TextView
+                android:id="@+id/channelMessage"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textAppearance="@style/t_15_normal_secondary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/channelMsgTime"
+            android:layout_width="28dp"
+            android:layout_height="14dp"
+            android:textAppearance="@style/t_11_normal_secondary"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

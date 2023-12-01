@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_24"
+        app:title="@string/auth_title"
+        app:titleTextAppearance="@style/t_17_bold"
+        app:titleCentered="true"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/input_pass_log_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/enter_login_and_pass"
+        android:textAppearance="@style/t_15_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_text_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/inputField"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_pass_log_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/box_frame"
+            android:hint="@string/enter_login"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusDown="@id/password_text_input_edit_text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="@style/t_17_bold" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputField"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/box_frame"
+            android:hint="@string/enter_pass"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusDown="@id/password_text_input_edit_text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="@style/t_17_bold" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:focusable="true"
+        android:text="@string/forgot_pass"
+        android:textAppearance="@style/t_15_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_text_input_layout" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/white_oval_btn"
+
+        android:backgroundTint="@color/change_btn_color"
+        android:enabled="false"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textAppearance="@style/t_14_normal"
+        android:textColor="@color/white"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
