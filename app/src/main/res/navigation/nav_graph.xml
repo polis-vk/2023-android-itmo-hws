@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/unloginScreen">
+
+    <fragment
+        android:id="@+id/unloginScreen"
+        android:name="ru.ok.itmo.example.unLoginPart.UnloginScreen"
+        android:label="fragment_unlogin_screen"
+        tools:layout="@layout/fragment_unlogin_screen" >
+        <action
+            android:id="@+id/action_unloginScreen_to_authScreen"
+            app:destination="@id/authScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/authScreen"
+        android:name="ru.ok.itmo.example.authPart.AuthScreen"
+        android:label="AuthScreen" >
+        <action
+            android:id="@+id/action_authScreen_to_unloginScreen"
+            app:destination="@id/unloginScreen" />
+        <action
+            android:id="@+id/action_authScreen_to_homePageScreen"
+            app:destination="@id/homePageScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageScreen"
+        android:name="ru.ok.itmo.example.channelListPart.HomePageScreen"
+        android:label="fragment_home_page_screen"
+        tools:layout="@layout/fragment_home_page_screen" >
+        <action
+            android:id="@+id/action_homePageScreen_to_authScreen"
+            app:destination="@id/authScreen" />
+    </fragment>
+</navigation>
