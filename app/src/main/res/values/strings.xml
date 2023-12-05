@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">itmo-example</string>
+    <string name="app_name">ТамТам</string>
+    <string name="login_with_phone">войти через телефон</string>
+    <string name="login_disclaimer">Нажимая «Войти», вы соглашаетесь с политикой конфиденциальности</string>
+    <string name="start_with_login">Войти через логин</string>
+    <string name="login_string">Login</string>
+    <string name="login_introduction">Введите ваш логин и пароль</string>
+    <string name="login_field_hint">Введите логин</string>
+    <string name="password_field_hint">Введите пароль</string>
+    <string name="login_forget_password">Забыли пароль?</string>
+    <string name="login_continue">Войти</string>
+    <string name="you_lose">Вы проиграли</string>
+    <string name="chats">Чаты</string>
+    <string name="invalid_login_or_password">Неправильный логин или пароль</string>
+    <string name="failed_to_auth">Не удалось войти</string>
+
+    <string name="empty_data_received">Данных для отображения нет</string>
 </resources>
