@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="20dp">
+
+    <TextView
+            android:id="@+id/login_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_info"
+            android:textSize="@dimen/base"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_login"
+            android:layout_width="0dp"
+            style="@style/inputFieldWrapper"
+            app:layout_constraintTop_toBottomOf="@id/login_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login"
+                style="@style/inputField"
+                android:background="@color/white"
+                android:hint="@string/login_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_password"
+            android:layout_width="0dp"
+            style="@style/inputFieldWrapper"
+            app:layout_constraintTop_toBottomOf="@id/layout_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                style="@style/inputField"
+                android:background="@color/white"
+                android:hint="@string/login_password"
+                android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+            android:id="@+id/password_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/base"
+            android:textColor="@color/active"
+            app:layout_constraintTop_toBottomOf="@id/layout_password"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/login_enter"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:text="@string/login_submit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
