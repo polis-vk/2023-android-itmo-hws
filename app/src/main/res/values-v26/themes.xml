@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="input_field" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/field_wrapper</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:background">@drawable/login_active_input_view</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+package ru.ok.itmo.example.chats.repository
+
+import ru.ok.itmo.example.chats.retrofit.models.Message
+
+sealed interface MessagesState {
+    class Success(val message: Message) : MessagesState
+    class Failure(val error: Throwable) : MessagesState
+    object Loading : MessagesState
+    object Started : MessagesState
+}
