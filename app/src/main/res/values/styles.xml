@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="start_button_text_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#697CFF</item>
+    </style>
+
+    <style name="chats_fragment_title">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="login_button_text_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="login_help_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="login_text_input_hint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#84848E</item>
+    </style>
+
+</resources>
