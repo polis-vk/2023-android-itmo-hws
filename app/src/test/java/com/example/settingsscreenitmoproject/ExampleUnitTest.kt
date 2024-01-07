@@ -1,4 +1,4 @@
-package ru.ok.itmo.example
+package com.example.settingsscreenitmoproject
 
 import org.junit.Test
 

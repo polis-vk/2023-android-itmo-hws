@@ -1,4 +1,4 @@
-package ru.ok.itmo.example
+package com.example.settingsscreenitmoproject
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("ru.ok.itmo.example", appContext.packageName)
+        assertEquals("com.example.settingsscreenitmoproject", appContext.packageName)
     }
 }
